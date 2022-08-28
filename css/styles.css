@@ -1,0 +1,243 @@
+body{
+    font-family: 'Jost';
+    background-color: #253765; 
+    background-image: url("../img/pexels-johannes-plenio-blue.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+h2,h3,h4,h5{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    color: #fff;
+}
+
+h4{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+h5{
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 17px;
+}
+
+textarea{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 35px;
+    color: #FFFFFF;
+    padding: 4px 10px;
+    background: rgba(19, 28, 50, 0.9);
+    border: 1px solid #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    height: 250px;
+    resize: none;
+}
+
+.listen textarea,
+.Aufgaben textarea{
+    margin-bottom: 32px;
+}
+
+.button{
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 10px;
+    gap: 10px;
+    height: 35px;
+    background: #131C32;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.title{
+    padding: 0px 10px;
+    gap: 10px;
+    height: 35px;
+    background: #00113B;
+    border: 1px solid #FFFFFF;
+    border-width: 1px 1px 0 1px;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.column{
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    height: 100%;
+    /* border: 1px solid #000; */
+    width: 30%;
+}
+
+.column h2,
+.column h3{
+    margin-bottom: 8px;
+}
+
+.listen{
+    width: 22%;
+}
+
+.Aufgaben{
+    width: 35%;
+    margin: 0 3.73%;
+}
+.Aufgaben h2{
+    /* -webkit-text-stroke: 1px black; */
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.Beschreibung{
+    width: 35%;
+}
+
+.Beschreibung textarea{
+    border-radius: 0px 0px 4px 4px;
+}
+
+.Beschreibung textarea:first-of-type {
+    height: 42px;
+    /* padding-top: 14px; */
+    margin-bottom: 29px;
+}
+
+.Beschreibung textarea:nth-of-type(2)
+{
+    height: 160px;
+}
+
+.content{
+    min-width: 800px;
+    min-height: 840px;
+    padding: 2.1% 2.8%;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.checkbox-area{
+    display: flex;
+    justify-content:space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 55px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+    padding-right: 35px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    color: #FFFFFF;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 22px;
+    height: 22px;
+    background: #00113B;
+    border: 1px solid #FEFEFE;
+    border-radius: 4px;
+    transform: translate(-100%,-100%);
+  }
+
+  /* On mouse-hover, add a grey background color */
+  .container:hover input ~ .checkmark {
+    /* background-color: #002B4E; */
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    /* background-color: #002B4E; */
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+
+  .button .checkmark {
+    position: absolute;
+    top: 0;
+    left: 101%;
+    width: 45px;
+    height: 33px;
+    background: #00113B;
+    border: 1px solid #FEFEFE;
+    border-radius:  0 4px 4px 0;
+    transform: translate(-78%,-106%);
+}
+
+.button .container .checkmark:after {
+    left: 16px;
+    top: 4px;
+    width: 10px;
+    height: 16px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(35deg);
+    -ms-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
